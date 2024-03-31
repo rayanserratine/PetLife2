@@ -1,0 +1,317 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+}
+
+body{
+color: #263138;
+}
+
+header{
+    width: auto;
+    background-color: #ff9a6c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    size: 100%;
+    
+}
+ @media (max-width:425px){
+   body{
+    width: 100%;
+   }
+    header{
+       display: flex;
+    
+    }
+ }
+
+
+header a{
+    color: #ffffff;
+    font-weight: 600;
+    padding: 20px;
+    text-decoration: none;
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 80px 128px 80px;
+    position: relative;
+}
+
+.imagem1{
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 1244px){
+    .buttons{
+        display: block;
+        align-items: center;
+        
+    }
+}
+
+@media (max-width: 1023px){
+#inicio{
+   flex-direction: column;
+    align-items: center;
+} #imagem1{
+size: auto;
+}
+}
+
+
+
+
+h1,
+h2{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.paragrafo{
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.botao{
+    background-color: #ff725e;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+    
+}
+
+@media (max-width: 1017px){
+    .botao {
+        padding: 10px 20px;
+        font-size: smaller;
+    }
+}
+
+
+
+@media (max-width: 905px){
+    .botao {
+        padding: 2px 5px;
+        font-size: 8px;
+    }
+}
+
+.botao-transparente{
+    background-color: transparent;
+    color: #ff725e;
+    padding: 16px 16px;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 1261px){
+    .botao-transparente{
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 905px){
+    .botao-transparente{
+        font-size: 70%;
+    }
+}
+
+
+
+.absolute{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+z-index: -10;
+}
+
+#clinica{
+    display: flex;
+    gap: 64px;
+    padding: 64px 80px ;
+    
+}
+
+@media (max-width: 1023px){
+    #clinica{
+        display: block;
+        align-items: center;
+        
+    }
+}
+
+.imagem2{
+    width: 100%;
+}
+
+.imagemFarmacia{
+    width: 100%;
+}
+
+.imagem3{
+width: 100%;
+}
+
+#clinica li{
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+#farmacia {
+    padding: 64px 80px;
+    text-align: center;
+}
+
+
+#farmacia img{
+  margin: 64px auto;
+ 
+}
+
+#farmacia .paragrafo{
+max-width: 950px;
+margin: 0 auto;
+}
+
+#duvidas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 64px 80px ;
+    
+}
+
+@media (max-width:1023px){
+    #duvidas{
+        display: block;
+        
+    }
+}
+
+.questions{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+   margin-bottom: 20px;
+   margin-top: 10px ;
+
+}
+
+.duvida{
+    position: relative;
+}
+
+.duvida h3{
+    border: 2px solid #ff725e;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.duvida img {
+position:absolute;
+top: 32px;
+right: 24px;
+}
+
+.duvida .paragrafo {
+border-right: 1px solid #ff725e;
+border-bottom: 1px solid #ff725e;
+border-left: 1px solid #ff725e;
+border-radius: 0 0 8px 8px;
+
+padding: 0 14px;
+height: 0;
+overflow: hidden;
+opacity: 0;
+transition: .2s;
+}
+
+.duvida.ativa .paragrafo{
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+footer{
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    gap: 80px;
+    padding: 47px 10px 25px 98px
+}
+
+footer img,
+footer.titulo,
+#links{
+   
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+#links{
+gap: 30px;
+}
+
+footer nav a{
+color: #263138;
+display:flex;
+margin-bottom: 16px;
+text-decoration: none;
+max-width: 350px;
+}
+
+
+
+footer p a{
+
+    color: #263138;
+}
+
+footer p{
+margin-bottom: 16px;
+}
+
+.contact{
+    gap: 30px;
+    float: right;
+}
+
+#copyright{
+    background-color: #263138;
+    color: #ffffff;
+    padding: 24px;
+    text-align: center;
+}
+
+#copyright a{
+    color: #ff725e;
+}
+
+@media (max-width:426px){
+    footer{
+        display: block;
+    }
+}
+
+
+/*Margin: fora do elemento
+border: borda entre o elemento e fora 
+padding: borda interna do elementoe*/
